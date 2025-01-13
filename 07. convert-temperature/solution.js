@@ -10,7 +10,7 @@ function convertTemperature(temperature, fromUnit, toUnit) {
   if (fromUnit === "C" && toUnit === "F") {
     result = (temperature * 9) / 5 + 32;
   } else if (fromUnit === "F" && toUnit === "C") {
-    result = ((temperature - 32) * 5) / 9;
+    result = (temperature - 32) * 5 / 9;
   } else {
     throw new Error("Unsupported unit conversion");
   }
